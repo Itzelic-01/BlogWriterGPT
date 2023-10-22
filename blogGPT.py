@@ -2,8 +2,8 @@ import openai
 import streamlit as st
 from streamlit_chat import message
 import time
- 
-openai.api_key = st.secrets["MY_APIKEY"]
+
+openai.api_key = st.secrets["MY_API_KEY"]
  
 def generate_response(prompt):
     response = openai.ChatCompletion.create(
